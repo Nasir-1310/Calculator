@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <H2 style="text-align: center; margin-top: 20px;">Welcome to my Calculator</H2>
+    <div class="row">
+        <div class="col-md-6 cal-bag">
+            <div  class="screen"><h2 id="output">0</h2></div>
+            <div class="buttons">
+                <button id="one" class="button-value ">1</button>
+                <button id="two" class="button-value">2</button>
+                <button id="three" class="button-value">3</button>
+               <button id="divide" class="button-value">/</button>
+                <br>
+                <button id="four" class="button-value">4</button>
+                <button id="five" class="button-value">5</button>
+                <button id="six" class="button-value">6</button>
+                <button id="mul" class="button-value">*</button>
+                <br>
+                <button id="seven" class="button-value">7</button>
+                <button id="eight" class="button-value">8</button>
+                <button id="nine" class="button-value">9</button>
+                <button id="minus" class="button-value">-</button>
+                <br>
+                <button id="clear" class="button-value">c</button>
+                <button id="zero" class="button-value">0</button>
+                <button id="equal" class="button-value">=</button>
+                <button id="plus" class="button-value">+</button>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        const button_check=document.getElementById('one');
+        button_check.addEventListener('click',function(){
+            const value=parseFloat(document.getElementById('one').innerText);
+            console.log(value);
+
+
+            let output_value=parseFloat(document.getElementById('output').innerText);
+        let output_show=output_value+value;
+        document.getElementById('output').innerText=output_show;
+           
+        })
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>
